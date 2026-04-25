@@ -57,7 +57,6 @@ The v5.0 document is an architecture/specification anchor, not the currently imp
 KI-GUARD v4.1 is a marker-based prototype used to test the feasibility of the v5.0 architecture. Feedback on marker coverage and signal logic is explicitly welcome.
 
 ## Installation
-## Installation
 
 Python 3.8+ is enough. No external dependencies are required.
 
