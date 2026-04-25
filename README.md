@@ -2,7 +2,7 @@
 
 Rule-based early-warning filter for AI interaction drift.
 
-> **Status: alpha research prototype.**  
+> **Status: alpha research prototype.**
 > Not a product. Not a compliance system. Not production-ready. Not statistically or externally validated.
 
 ## What KI-GUARD is
@@ -17,14 +17,14 @@ It does **not** detect truth, intent, consciousness, deception, or actual manipu
 
 KI-GUARD currently marks possible indicators in areas such as:
 
-- hype language
-- excessive agreement / sycophancy
-- overclaiming
-- compliance theater
-- role drift
-- forward steering
-- scope creep
-- missing validity brakes
+- hype language,
+- excessive agreement / sycophancy,
+- overclaiming,
+- compliance theater,
+- role drift,
+- forward steering,
+- scope creep,
+- missing validity brakes.
 
 These are warnings for manual review, not final judgments.
 
@@ -60,43 +60,31 @@ Python 3.8+ is enough. No external dependencies are required.
 
 Run a demo:
 
-```bash
-python ki_guard_v4_1.py --demo
-```
+    python ki_guard_v4_1.py --demo
 
 Analyze German text:
 
-```bash
-python ki_guard_v4_1.py --lang de --assistant "Das ist eine bahnbrechende und garantiert produktionsreife Lösung."
-```
+    python ki_guard_v4_1.py --lang de --assistant "Das ist eine bahnbrechende und garantiert produktionsreife Lösung."
 
 Analyze English text:
 
-```bash
-python ki_guard_v4_1.py --lang en --assistant "This is a guaranteed production-ready breakthrough."
-```
+    python ki_guard_v4_1.py --lang en --assistant "This is a guaranteed production-ready breakthrough."
 
 JSON output:
 
-```bash
-python ki_guard_v4_1.py --lang de --json --assistant "Das ist garantiert rechtssicher."
-```
+    python ki_guard_v4_1.py --lang de --json --assistant "Das ist garantiert rechtssicher."
 
 Optional local smoke tests:
 
-```bash
-python ki_guard_v4_1.py --run-tests
-```
+    python ki_guard_v4_1.py --run-tests
 
 ## Use in Python
 
-```python
-from ki_guard_v4_1 import analysiere, zeige_ergebnis
+    from ki_guard_v4_1 import analysiere, zeige_ergebnis
 
-text = "Das ist eine revolutionäre Idee! Du hast absolut recht."
-result = analysiere(text, lang="de")
-zeige_ergebnis(result)
-```
+    text = "Das ist eine revolutionäre Idee! Du hast absolut recht."
+    result = analysiere(text, lang="de")
+    zeige_ergebnis(result)
 
 ## Signal levels
 
@@ -111,9 +99,7 @@ Signals are warnings, not proof.
 
 ## Important independence note
 
-KI-GUARD should not be run by the same AI system whose output is being checked if the goal is an independent review.
-
-A model can imitate an audit result. Local execution by a human reviewer is the intended use.
+KI-GUARD should not be run by the same AI system whose output is being checked if the goal is an independent review. A model can imitate an audit result. Local execution by a human reviewer is the intended use.
 
 ## License
 
@@ -121,6 +107,4 @@ MIT. See `LICENSE`.
 
 ## Citation / authorship note
 
-This repository was developed by Fatih / FATILI80 with AI-assisted programming and auditing.
-
-AI assistance does not remove the need for human review, external testing, and careful limitation language.
+This repository was developed by Fatih / FATILI80 with AI-assisted programming and auditing. AI assistance does not remove the need for human review, external testing, and careful limitation language.
